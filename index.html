@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="text-decoration: dotted;">About Us </title>
+    <style>
+        img{
+            margin: 50px ;
+        }
+        /* .container{
+            height: 20px;
+            width: 20px;
+            display: inline-block;
+        } */
+        #white{
+            background-color: aliceblue;
+        }
+        #red{
+            background-color: red;
+        }
+       .btn{
+        height: 20px;
+        width: 20px;
+        display: inline-block;
+        margin: 20px;
+        cursor: pointer;
+        border-radius: 50%;
+        
+       }
+      
+     #green{
+        background-color: green;
+     }
+     #blue{
+        background-color: blue;
+     }
+     #yellow{
+        background-color: yellow;
+     }
+
+       
+    </style>
+</head>
+<body>
+    
+    <h1 style="text-align: center;">Background Changer</h1> 
+     <div id="container">
+     
+         <span class="btn" id="green" onclick="changebg('green')" ></span>
+          <span class="btn" id="blue" onclick="changebg('blue')"></span>
+           <span class="btn" id="yellow" onclick="changebg('yellow')"></span>
+     </div>
+     
+
+    <img src="bg.jpg" style="width: 1200px; height: 500px;">
+    <script>
+        function changebg(color)
+
+        {
+            document.body.style.backgroundColor=color;
+
+
+        }
+    
+
+    </script>
+    
+</body>
+</html>
